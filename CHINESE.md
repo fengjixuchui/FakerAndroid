@@ -31,9 +31,9 @@ A tool translate apk file to common android project and support so hook and incl
 ### 生成的Android项目二次开发教程(<a href="https://blog.csdn.net/easy6798/article/details/109404325" target="_blank">图文教程</a>)
 ##### 1、打开项目
 - Android studio直接打开工具生成的Android项目
-- 保持跟目录build.gradle中com.android.tools.build:gradle:3.4.0依赖固定，请勿升级或修改该版本号，且项目配置NDk版本为21
+- 保持跟目录build.gradle中依赖固定，请勿配置AndroidGradlePlugin，且项目配置NDk版本为21
 - 存在已知缺陷，res下的部分资源文件编译不过，需要手动修复一下，部分Manifest标签无法编译需要手动修复  
-（关于Res混淆手动实验了几个，如果遇到了这个问题，可以手动尝试，只要保证res/public.xml中的name对应的资源文件可以正常链路下去然后修复到可编译的程度，程序运行时一般是没有res问题，太完美的解决方案尚未找到，太大型的apk比较困难，有找到方法的可以同步一下哦）
+（关于Res混淆手动实验了几个，如果遇到了这个问题，可以手动尝试，只要保证res/public.xml中的name对应的资源文件可以正常链路下去然后修复到可编译的程度，程序运行时一般是没有res问题，太完美的解决方案尚未完成）
 
 ##### 2、调试运行项目
 - 连接测试机机
@@ -50,7 +50,7 @@ A tool translate apk file to common android project and support so hook and incl
 - il2cpp unity游戏脚本二次开发  
   借助il2cpp Scaffolding 和FakeCpp,使用jni对原il2cpp游戏脚本进行Hook调用
 - Dex折叠  
-  build.gradle 配置sensitiveOptions用于隐藏敏感的dex代码，以规避静态分析
+  build.gradle 配置sensitiveOptions用于隐藏敏感的dex代码，以规避静态分析，（Dex缓存原因在app版本号不变的情况使用第一次缓存，配置项调试请卸载后运行）
   
   
 ##### 4、正在路上
@@ -58,7 +58,7 @@ resources.arsc decode 兼容，目前混淆某些大型 apk Res decoder有问题
 各种不理想情况兼容
 ##### 5、遇到问题了？兄弟别走肯定能用，而且是你最佳的解决方案，咨询探讨
 - QQ群:901157034
-- 版本定制:QQ 1404774249
+- 休闲单机定制版:QQ 1404774249
 - [问题反馈](https://github.com/Efaker/FakerAndroid/issues)
 ##### 6、给个star?免费的           
 
