@@ -18,9 +18,6 @@ A tool translate apk file to common android project and support so hook and incl
 ### 运行环境
 - Java
 - il2cpp游戏Apk，非windows暂时无法生成il2cpp c++脚手架
-- 目前来说decode环节还是主要依赖了Apktool,请确保Apktool decode是可以通过的，FakerAndroid 保留了Apktool本来命令  
-例： ```java -jar FakerAndroid.jar d -f <apkpath> -o <outPath>```
-- 对于加壳的apk请自行脱壳后使用,理论上Apktool正常decode、encode的Apk都可以一马平川的直接运行
 ### 使用方式
 - 下载[FakerAndroid.jar](https://github.com/Efaker/FakerAndroid/releases)(2020/11/15/16:53:00)
 - cmd命令行 ```cd <FakerAndroid.jar平级目录>``` 
@@ -57,8 +54,7 @@ A tool translate apk file to common android project and support so hook and incl
 resources.arsc decode 兼容，目前混淆某些大型 apk Res decoder有问题  
 各种不理想情况兼容
 ##### 5、遇到问题了？兄弟别走肯定能用，而且是你最佳的解决方案，咨询探讨
-- QQ群:901157034
-- 休闲单机定制版:QQ 1404774249
+- 咨询:QQ 1404774249
 - [问题反馈](https://github.com/Efaker/FakerAndroid/issues)
 ##### 6、给个star?免费的           
 
@@ -68,8 +64,8 @@ resources.arsc decode 兼容，目前混淆某些大型 apk Res decoder有问题
 3、加固Apk需要先脱壳后才能,暴漏java api  
 4、有自校验的Apk,须项目运行起来后自行检查破解  
 5、Manifest莫名奇妙的问题，可以先尝试注释掉异常代码，逐步还原试试  
-6、暂时不支持x86，pc模拟器是x86
-## 实例(过时，稍后补充新的)
+6、[Java OOM issue](https://github.com/Efaker/FakerAndroid/issues/17)
+## 实例
 - 一夜之间来了这么多的star好慌张，全是问怎么用的，请原谅我只会写代码不会写文档啊！！！  
 - 因为是il2cpp 游戏apk，里面包含了原游戏安装包和生成的代码项目所以比较大，下载的话得时间稍微长一点，如果github实在下不下来的话，直接QQ我索要
 - [实例下载地址](https://github.com/Efaker/FakerAndroid-Demos/releases/tag/BasicDemo1)
